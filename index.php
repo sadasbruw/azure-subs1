@@ -26,13 +26,9 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    //$host = "sadasdb.database.windows.net";
-    //$user = "sadasdb";
-    //$pass = "Parseus123";
-    //$db = "Registration";
-
+    
     try {
-        $conn = new PDO("sqlsrv:server = tcp:sadasdb.database.windows.net,1433; Database = sadasdb", "sadasdb", "Parseus123");
+        $conn = new PDO("");
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
     } catch(Exception $e) {
         echo "Failed: " . $e;
